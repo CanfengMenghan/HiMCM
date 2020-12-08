@@ -1,0 +1,19 @@
+scatter3(dragon(:,1),dragon(:,2),dragon(:,3))
+scatter(dragon(:,1),dragon(:,2))
+for i=1:587
+b(i,i+1)=D(i,i+1);
+end
+
+中心76，76，150
+
+scatter3(head(:,1),head(:,2),head(:,3))
+scatter3(body(:,1),body(:,2),body(:,3))
+scatter3(tail(:,1),tail(:,2),tail(:,3))
+
+
+for i=1:477
+for j=1:477
+d(i,j)=sqrt((sky(i,1)-ground(j,1))^2+(sky(i,2)-ground(j,2))^2+(sky(i,3)-ground(j,3))^2);
+end
+end
+横行为地纵列为天

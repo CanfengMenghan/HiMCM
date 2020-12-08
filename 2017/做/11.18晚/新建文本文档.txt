@@ -1,0 +1,34 @@
+scatter3(dragon(:,1),dragon(:,2),dragon(:,3))
+scatter(dragon(:,1),dragon(:,2))
+for i=1:587
+b(i,i+1)=D(i,i+1);
+end
+
+中心76，76，150
+
+scatter3(head(:,1),head(:,2),head(:,3))
+scatter3(body(:,1),body(:,2),body(:,3))
+scatter3(tail(:,1),tail(:,2),tail(:,3))
+
+
+for i=1:477
+for j=1:477
+d(i,j)=sqrt((sky(i,1)-ground(j,1))^2+(sky(i,2)-ground(j,2))^2+(sky(i,3)-ground(j,3))^2);
+end
+end
+横行为地纵列为天
+
+i可以不要j必须要
+摩天轮可以不要龙必须要
+
+hold on
+scatter3(a(:,1),a(:,2),a(:,3))
+hold on
+scatter3(b(:,1),b(:,2),b(:,3))
+for i=1:477
+
+plot3([a(i,1) b(i,1)],[a(i,2) b(i,2)],[a(i,3) b(i,3)]);
+hold on
+end
+
+ D(D<1.5)
